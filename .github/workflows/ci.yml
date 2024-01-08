@@ -30,7 +30,7 @@ jobs:
     - run: npm test
     - name: Build and Push Docker Image
       run: |
-        docker-compose --build
+        docker-compose up --build
         
     - uses: docker/login-action@v1
       with:
